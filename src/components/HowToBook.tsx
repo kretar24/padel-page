@@ -3,8 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const WA_URL =
-  "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
+const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 
 const steps = [
   {
@@ -14,8 +13,8 @@ const steps = [
   },
   {
     number: "02",
-    title: "Escríbenos por WhatsApp",
-    body: "Confirma tu reserva en segundos. Sin formularios complicados.",
+    title: "Reserva en Playtomic",
+    body: "Usa Playtomic para reservar online al instante. También puedes escribirnos por WhatsApp.",
   },
   {
     number: "03",
@@ -78,12 +77,12 @@ export default function HowToBook() {
           className="text-center mt-14"
         >
           <a
-            href={WA_URL}
+            href={PLAYTOMIC_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-navy text-white font-heading text-xl tracking-wider px-10 py-4 rounded-full hover:bg-navy-light transition-colors"
           >
-            EMPEZAR A RESERVAR
+            RESERVAR EN PLAYTOMIC
           </a>
         </motion.div>
       </div>

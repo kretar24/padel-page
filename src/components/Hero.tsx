@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 
+const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 const WA_URL =
   "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
 
@@ -183,18 +184,20 @@ export default function Hero() {
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <a
-                href={WA_URL}
+                href={PLAYTOMIC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-lime text-navy font-heading text-xl tracking-wider px-8 py-4 rounded-full hover:bg-lime-dark transition-colors text-center"
               >
-                RESERVAR VÍA WHATSAPP
+                RESERVAR EN PLAYTOMIC
               </a>
               <a
-                href="#precios"
+                href={WA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-white/30 text-white font-heading text-xl tracking-wider px-8 py-4 rounded-full hover:border-lime hover:text-lime transition-colors text-center"
               >
-                VER PRECIOS
+                RESERVAR VÍA WHATSAPP
               </a>
             </motion.div>
 

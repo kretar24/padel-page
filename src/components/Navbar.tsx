@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const WA_URL =
-  "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
+const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 
 const navLinks = [
   { href: "#canchas", label: "Canchas" },
@@ -89,7 +88,7 @@ export default function Navbar() {
 
             <div className="hidden lg:block">
               <a
-                href={WA_URL}
+                href={PLAYTOMIC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-lime text-navy font-heading text-lg tracking-wider px-6 py-2 rounded-full hover:bg-lime-dark transition-colors"
@@ -144,7 +143,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={WA_URL}
+            href={PLAYTOMIC_URL}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}

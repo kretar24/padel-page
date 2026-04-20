@@ -3,8 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-const WA_COURT = (n: number) =>
-  `https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20la%20Cancha%20${n}%20en%20Epic%20Padel`;
+const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 
 function CourtTopViewSVG() {
   return (
@@ -133,12 +132,12 @@ export default function Courts() {
                   </span>
                 </div>
                 <a
-                  href={WA_COURT(court.number)}
+                  href={PLAYTOMIC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-lime text-navy font-heading text-lg tracking-wider py-3 rounded-xl hover:bg-lime-dark transition-colors text-center"
                 >
-                  RESERVAR ESTA CANCHA
+                  RESERVAR EN PLAYTOMIC
                 </a>
               </div>
             </motion.div>
