@@ -11,9 +11,9 @@ const plans = [
   {
     id: "morning",
     title: "MAÑANA",
-    hours: "3PM – 4PM",
+    hours: "3PM – 5PM",
     price: "$30",
-    unit: "/hora",
+    unit: "/hora y media",
     badge: "PRECIO ESPECIAL",
     badgeClass: "bg-white/10 text-white/70",
     featured: false,
@@ -23,9 +23,9 @@ const plans = [
   {
     id: "evening",
     title: "TARDE / NOCHE",
-    hours: "4PM – 10PM",
+    hours: "5PM – 10PM",
     price: "$40",
-    unit: "/hora",
+    unit: "/hora y media",
     badge: "MÁS POPULAR",
     badgeClass: "bg-lime text-navy",
     featured: true,
