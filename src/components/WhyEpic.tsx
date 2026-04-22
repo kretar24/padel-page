@@ -44,7 +44,7 @@ const features = [
   },
   {
     title: "Para todos los niveles",
-    body: "Tanto si es tu primera raqueta como si llevas años en la pista. Principiantes y avanzados bienvenidos.",
+    body: "Tanto si es tu primera pala como si llevas años en la pista. Principiantes y avanzados bienvenidos.",
     icon: (
       <svg
         width="28"

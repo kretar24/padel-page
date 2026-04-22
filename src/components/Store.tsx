@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const pills = [
   {
-    label: "Raquetas",
+    label: "Palas",
     icon: (
       <svg
         width="16"
@@ -102,7 +102,7 @@ export default function Store() {
         >
           <div className="flex-1">
             <p className="text-white/60 leading-relaxed text-[16px] max-w-xl mb-8">
-              <span className="text-white font-medium">Punto Pádel CR</span> tiene su tienda física dentro de Epic Padel. Raquetas, pelotas, grips, ropa y accesorios de las mejores marcas.
+              <span className="text-white font-medium">Punto Pádel CR</span> tiene su tienda física dentro de Epic Padel. Palas, pelotas, grips, ropa y accesorios de las mejores marcas.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
