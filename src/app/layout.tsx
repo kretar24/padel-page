@@ -23,22 +23,22 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Epic Padel | Canchas de Pádel en Grecia, Alajuela",
+  title: "Epic Padel | Canchas Indoor de Pádel en Grecia, Alajuela",
   description:
-    "Las primeras canchas de pádel en Grecia, Alajuela. 3 canchas profesionales. Abierto 3PM–10PM. Reserva ahora sin salir de la zona.",
+    "Las únicas canchas indoor de pádel en Grecia, Alajuela. 3 canchas profesionales bajo techo. Tienda Punto Pádel CR en el club. Abierto 3PM–10PM. Reserva en Playtomic o WhatsApp.",
   openGraph: {
-    title: "Epic Padel | Canchas de Pádel en Grecia, Alajuela",
+    title: "Epic Padel | Canchas Indoor de Pádel en Grecia, Alajuela",
     description:
-      "Las primeras canchas de pádel en Grecia, Alajuela. 3 canchas profesionales. Abierto 3PM–10PM. Reserva ahora sin salir de la zona.",
+      "Las únicas canchas indoor de pádel en Grecia, Alajuela. 3 canchas profesionales bajo techo. Tienda Punto Pádel CR en el club. Abierto 3PM–10PM. Reserva en Playtomic o WhatsApp.",
     type: "website",
     locale: "es_CR",
     siteName: "Epic Padel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Epic Padel | Canchas de Pádel en Grecia, Alajuela",
+    title: "Epic Padel | Canchas Indoor de Pádel en Grecia, Alajuela",
     description:
-      "Las primeras canchas de pádel en Grecia, Alajuela. Abierto 3PM–10PM.",
+      "Las únicas canchas indoor de pádel en Grecia, Alajuela. Abierto 3PM–10PM.",
   },
 };
 
@@ -49,12 +49,13 @@ const jsonLd = {
   description: "Las primeras canchas de pádel en Grecia, Alajuela, Costa Rica.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Canchas en Creta",
+    streetAddress: "500m de los Tribunales de Grecia",
+    postalCode: "20301",
     addressLocality: "Grecia",
     addressRegion: "Alajuela",
     addressCountry: "CR",
   },
-  telephone: "+50689527591",
+  telephone: "+50683121442",
   openingHours: "Mo-Su 15:00-22:00",
   geo: {
     "@type": "GeoCoordinates",

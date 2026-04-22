@@ -104,9 +104,14 @@ export default function Courts() {
                   <h3 className="font-heading text-[19px] font-semibold text-white tracking-[-0.01em]">
                     {court.name}
                   </h3>
-                  <span className="font-mono text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
-                    Disponible
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-[0.62rem] text-white/50 uppercase tracking-[0.06em] bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                      Indoor
+                    </span>
+                    <span className="font-mono text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
+                      Disponible
+                    </span>
+                  </div>
                 </div>
                 <a
                   href={PLAYTOMIC_URL}

@@ -63,6 +63,25 @@ const features = [
       </svg>
     ),
   },
+  {
+    title: "Siempre bajo techo",
+    body: "Jugás con lluvia, sol o viento. Nuestras 3 canchas son completamente indoor. El clima no cancela tu partido.",
+    icon: (
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#C8F135"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+  },
 ];
 
 export default function WhyEpic() {
@@ -92,7 +111,7 @@ export default function WhyEpic() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}

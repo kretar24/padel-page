@@ -64,13 +64,14 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-[14px] text-white/45">
               <li>
                 <a
-                  href="tel:+50689527591"
+                  href="tel:+50683121442"
                   className="hover:text-lime transition-colors"
                 >
-                  +506 8952-7591
+                  +506 8312-1442
                 </a>
               </li>
-              <li>Grecia, Alajuela, Costa Rica</li>
+              <li>500m de los Tribunales de Grecia</li>
+              <li>20301, Grecia, Alajuela, Costa Rica</li>
               <li>3:00 PM – 10:00 PM · Todos los días</li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 const WA_URL =
-  "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
+  "https://wa.me/50683121442?text=Hola%2C%20quiero%20reservar%20una%20cancha";
 
 const stats = [
   {
@@ -51,6 +51,22 @@ const stats = [
         strokeWidth="2"
       >
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      </svg>
+    ),
+  },
+  {
+    label: "100% Indoor",
+    icon: (
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#C8F135"
+        strokeWidth="2"
+      >
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
   },

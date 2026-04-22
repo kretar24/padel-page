@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 const WA_URL =
-  "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
+  "https://wa.me/50683121442?text=Hola%2C%20quiero%20reservar%20una%20cancha";
 
 export default function FinalCTA() {
   const ref = useRef(null);

@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const WA_URL =
-  "https://wa.me/50689527591?text=Hola%2C%20quiero%20reservar%20una%20cancha";
+  "https://wa.me/50683121442?text=Hola%2C%20quiero%20reservar%20una%20cancha";
 
 export default function Location() {
   const ref = useRef(null);
@@ -45,7 +45,7 @@ export default function Location() {
             className="rounded overflow-hidden border border-line shadow-xl aspect-video lg:aspect-auto lg:h-[420px]"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15709.123456789!2d-84.3200!3d10.0650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f3c3c3c3c3c3%3A0x0!2sGrecia%2C+Alajuela!5e0!3m2!1sen!2scr!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5!2d-84.31930!3d10.06480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0b7c2b2b2b2b2%3A0x0!2sTribunales+de+Justicia+de+Grecia%2C+Grecia%2C+Alajuela%2C+Costa+Rica!5e0!3m2!1ses!2scr!4v1713000000000!5m2!1ses!2scr"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "340px" }}
@@ -82,8 +82,8 @@ export default function Location() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 <div>
-                  <p className="text-white font-medium text-[14px]">Canchas en Creta</p>
-                  <p className="text-[13px] text-white/45 mt-0.5">Grecia, Alajuela, Costa Rica</p>
+                  <p className="text-white font-medium text-[14px]">500m de los Tribunales de Grecia</p>
+                  <p className="text-[13px] text-white/45 mt-0.5">20301, Grecia, Alajuela, Costa Rica</p>
                 </div>
               </div>
 
@@ -100,10 +100,10 @@ export default function Location() {
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.15a16 16 0 006.94 6.94l1.52-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
                 <a
-                  href="tel:+50689527591"
+                  href="tel:+50683121442"
                   className="text-white font-medium text-[14px] hover:text-lime transition-colors"
                 >
-                  +506 8952-7591
+                  +506 8312-1442
                 </a>
               </div>
 
@@ -156,7 +156,7 @@ export default function Location() {
                 WHATSAPP
               </a>
               <a
-                href="tel:+50689527591"
+                href="tel:+50683121442"
                 className="flex-1 border border-line text-white/60 font-heading text-[14px] font-medium tracking-tight py-3 rounded hover:border-lime hover:text-lime transition-colors text-center"
               >
                 LLAMAR
