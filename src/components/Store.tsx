@@ -83,7 +83,7 @@ export default function Store() {
             <span className="flex-1 h-px bg-line" />
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-white tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             TIENDA DE PÁDEL{" "}
@@ -112,7 +112,7 @@ export default function Store() {
                   className="flex items-center gap-2 bg-lime/5 border border-lime/15 px-4 py-2 rounded-full"
                 >
                   {pill.icon}
-                  <span className="font-mono text-[0.72rem] text-white/70 uppercase tracking-[0.05em]">
+                  <span className="font-heading font-semibold text-[0.72rem] text-white/70 uppercase tracking-[0.05em]">
                     {pill.label}
                   </span>
                 </span>
@@ -128,7 +128,7 @@ export default function Store() {
               >
                 VER TIENDA ONLINE <span aria-hidden>→</span>
               </a>
-              <span className="border border-line text-white/45 font-heading text-[14px] font-medium tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
+              <span className="border border-line text-white/45 font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
                 O visitanos en cancha
               </span>
             </div>

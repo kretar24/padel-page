@@ -54,7 +54,7 @@ export default function Pricing() {
             <span className="flex-1 h-px bg-line" />
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-white tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             PRECIOS SIMPLES,{" "}
@@ -76,7 +76,7 @@ export default function Pricing() {
               }`}
             >
               <span
-                className={`self-start font-mono text-[0.62rem] tracking-[0.06em] uppercase px-3 py-1.5 rounded-full ${plan.badgeClass}`}
+                className={`self-start font-heading font-semibold text-[0.62rem] tracking-[0.06em] uppercase px-3 py-1.5 rounded-full ${plan.badgeClass}`}
               >
                 {plan.badge}
               </span>
@@ -89,7 +89,7 @@ export default function Pricing() {
 
               <div className="flex items-end gap-1.5 my-1">
                 <span
-                  className={`font-heading text-[64px] leading-none font-medium tracking-[-0.03em] ${
+                  className={`font-heading text-[64px] leading-none font-extrabold tracking-[-0.03em] ${
                     plan.featured ? "text-lime" : "text-white"
                   }`}
                 >
@@ -145,7 +145,7 @@ export default function Pricing() {
             href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-line text-white/60 font-heading text-[15px] font-medium tracking-tight px-8 py-4 rounded-full hover:border-lime hover:text-lime transition-colors"
+            className="inline-flex items-center gap-2 border border-line text-white/60 font-heading text-[15px] font-semibold tracking-tight px-8 py-4 rounded-full hover:border-lime hover:text-lime transition-colors"
           >
             O VÍA WHATSAPP
           </a>

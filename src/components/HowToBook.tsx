@@ -43,7 +43,7 @@ export default function HowToBook() {
             <span className="flex-1 h-px bg-line" />
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-white tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             ¿CÓMO{" "}

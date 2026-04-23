@@ -75,7 +75,7 @@ export default function Courts() {
             <span className="flex-1 h-px bg-line" />
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-white tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             3 CANCHAS{" "}
@@ -100,31 +100,39 @@ export default function Courts() {
                 <CourtTopViewSVG />
               </div>
               <div className="border-t border-line px-6 py-5">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between">
                   <h3 className="font-heading text-[19px] font-semibold text-white tracking-[-0.01em]">
                     {court.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-[0.62rem] text-white/50 uppercase tracking-[0.06em] bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span className="font-heading font-semibold text-[0.62rem] text-white/50 uppercase tracking-[0.06em] bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                       Indoor
                     </span>
-                    <span className="font-mono text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
+                    <span className="font-heading font-semibold text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
                       Disponible
                     </span>
                   </div>
                 </div>
-                <a
-                  href={PLAYTOMIC_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-lime text-accent-ink font-heading text-[14px] font-semibold tracking-tight py-3 rounded hover:bg-lime-dark transition-colors text-center"
-                >
-                  RESERVAR EN PLAYTOMIC
-                </a>
               </div>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+          className="mt-10 flex justify-center"
+        >
+          <a
+            href={PLAYTOMIC_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-lime text-accent-ink font-heading text-[15px] font-semibold tracking-tight px-10 py-4 rounded hover:bg-lime-dark transition-colors"
+          >
+            RESERVAR CANCHA EN PLAYTOMIC
+          </a>
+        </motion.div>
       </div>
     </section>
   );

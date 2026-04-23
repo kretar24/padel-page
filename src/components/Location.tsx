@@ -29,7 +29,7 @@ export default function Location() {
             </span>
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-white tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             DÓNDE{" "}
@@ -157,7 +157,7 @@ export default function Location() {
               </a>
               <a
                 href="tel:+50683121442"
-                className="flex-1 border border-line text-white/60 font-heading text-[14px] font-medium tracking-tight py-3 rounded hover:border-lime hover:text-lime transition-colors text-center"
+                className="flex-1 border border-line text-white/60 font-heading text-[14px] font-semibold tracking-tight py-3 rounded hover:border-lime hover:text-lime transition-colors text-center"
               >
                 LLAMAR
               </a>

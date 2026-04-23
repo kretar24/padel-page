@@ -103,7 +103,7 @@ export default function WhyEpic() {
             <span className="flex-1 h-px bg-line" />
           </div>
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em] mb-16"
+            className="font-heading font-extrabold text-white tracking-[-0.03em] mb-16"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             ¿POR QUÉ{" "}

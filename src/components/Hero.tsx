@@ -158,7 +158,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeOut" }}
-              className="font-heading font-medium text-white leading-[0.92] tracking-[-0.04em]"
+              className="font-heading font-extrabold text-white leading-[0.92] tracking-[-0.04em]"
               style={{ fontSize: "clamp(72px, 11vw, 152px)" }}
             >
               PÁDEL EN
@@ -195,7 +195,7 @@ export default function Hero() {
                 href={WA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-line text-white/70 font-heading text-[15px] font-medium tracking-tight px-7 py-4 rounded-full hover:border-lime hover:text-lime transition-colors text-center"
+                className="border border-line text-white/70 font-heading text-[15px] font-semibold tracking-tight px-7 py-4 rounded-full hover:border-lime hover:text-lime transition-colors text-center"
               >
                 RESERVAR VÍA WHATSAPP
               </a>
@@ -226,7 +226,7 @@ export default function Hero() {
                   className="bg-navy-light border border-line px-3.5 py-2 rounded-full flex items-center gap-2"
                 >
                   {stat.icon}
-                  <span className="text-white/75 text-[13px] font-medium">
+                  <span className="font-heading text-white/75 text-[13px] font-semibold">
                     {stat.label}
                   </span>
                 </motion.div>

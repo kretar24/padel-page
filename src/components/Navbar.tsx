@@ -70,7 +70,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-white/55 hover:text-lime transition-colors text-[13px] font-medium"
+                  className="font-heading text-white/55 hover:text-lime transition-colors text-[13px] font-semibold"
                 >
                   {link.label}
                 </a>
@@ -128,7 +128,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="font-heading text-4xl font-medium text-white hover:text-lime transition-colors tracking-[-0.02em]"
+              className="font-heading text-4xl font-semibold text-white hover:text-lime transition-colors tracking-[-0.02em]"
             >
               {link.label}
             </a>

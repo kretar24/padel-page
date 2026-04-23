@@ -9,7 +9,7 @@
   --color-accent-ink: #121909;
   --color-lime: #C8F135;
   --color-lime-dark: #a8cc1a;
-  --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-heading: var(--font-barlow-condensed), system-ui, sans-serif;
   --font-body: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }

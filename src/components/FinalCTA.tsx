@@ -47,7 +47,7 @@ export default function FinalCTA() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="font-heading font-medium tracking-[-0.04em] leading-[0.92]"
+          className="font-heading font-extrabold tracking-[-0.04em] leading-[0.92]"
           style={{
             fontSize: "clamp(56px, 9vw, 128px)",
             color: "#121909",
@@ -87,7 +87,7 @@ export default function FinalCTA() {
             href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 font-heading text-[15px] font-medium tracking-tight px-8 py-4 rounded-full border-2 border-navy/20 hover:border-navy/50 transition-colors"
+            className="inline-flex items-center gap-3 font-heading text-[15px] font-semibold tracking-tight px-8 py-4 rounded-full border-2 border-navy/20 hover:border-navy/50 transition-colors"
             style={{ color: "#121909" }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
