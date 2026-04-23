@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install *)",
       "Bash(npx tsc *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(curl -sI \"https://maps.app.goo.gl/MBJN3NRtxjuWbsVp7\")"
     ]
   }
 }

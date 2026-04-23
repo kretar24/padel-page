@@ -59,8 +59,8 @@ const jsonLd = {
   openingHours: "Mo-Su 15:00-22:00",
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 10.065,
-    longitude: -84.32,
+    latitude: 10.0819365,
+    longitude: -84.3107336,
   },
   priceRange: "$30–$40",
   sport: "Padel",

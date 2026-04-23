@@ -45,7 +45,7 @@ export default function Location() {
             className="rounded overflow-hidden border border-line shadow-xl aspect-video lg:aspect-auto lg:h-[420px]"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5!2d-84.31930!3d10.06480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0b7c2b2b2b2b2%3A0x0!2sTribunales+de+Justicia+de+Grecia%2C+Grecia%2C+Alajuela%2C+Costa+Rica!5e0!3m2!1ses!2scr!4v1713000000000!5m2!1ses!2scr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.8!2d-84.3107336!3d10.0819365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa059716be020dd%3A0x882cab263bc5cdd!2sEpic%20Padel!5e0!3m2!1ses!2scr!4v1713000000000!5m2!1ses!2scr"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "340px" }}
