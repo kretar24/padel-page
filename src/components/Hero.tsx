@@ -15,7 +15,7 @@ const stats = [
         height="14"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="white"
         strokeWidth="2"
       >
         <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -31,7 +31,7 @@ const stats = [
         height="14"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="white"
         strokeWidth="2"
       >
         <circle cx="12" cy="12" r="10" />
@@ -47,7 +47,7 @@ const stats = [
         height="14"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="white"
         strokeWidth="2"
       >
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -62,7 +62,7 @@ const stats = [
         height="14"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="white"
         strokeWidth="2"
       >
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -87,7 +87,7 @@ function HeroCourtSVG() {
         width="360"
         height="540"
         rx="4"
-        stroke="#C8F135"
+        stroke="white"
         strokeWidth="2"
         strokeDasharray="14 7"
         fill="none"
@@ -99,42 +99,50 @@ function HeroCourtSVG() {
         width="324"
         height="504"
         rx="2"
-        fill="#1C2235"
-        stroke="#C8F135"
+        fill="rgba(255,255,255,0.05)"
+        stroke="white"
         strokeWidth="1.5"
         opacity="0.9"
       />
-      <line x1="28" y1="280" x2="352" y2="280" stroke="#C8F135" strokeWidth="2.5" />
-      <circle cx="28" cy="280" r="5" fill="#C8F135" />
-      <circle cx="352" cy="280" r="5" fill="#C8F135" />
+      <line x1="28" y1="280" x2="352" y2="280" stroke="white" strokeWidth="2.5" />
+      <circle cx="28" cy="280" r="5" fill="white" />
+      <circle cx="352" cy="280" r="5" fill="white" />
       <line x1="28" y1="168" x2="352" y2="168" stroke="white" strokeWidth="1" opacity="0.25" />
       <line x1="190" y1="168" x2="190" y2="280" stroke="white" strokeWidth="1" opacity="0.25" />
       <line x1="28" y1="392" x2="352" y2="392" stroke="white" strokeWidth="1" opacity="0.25" />
       <line x1="190" y1="280" x2="190" y2="392" stroke="white" strokeWidth="1" opacity="0.25" />
-      <circle cx="190" cy="280" r="5" fill="#C8F135" />
-      <ellipse cx="190" cy="280" rx="70" ry="22" fill="#C8F135" opacity="0.05" />
-      <rect x="10" y="10" width="30" height="30" rx="4" fill="#C8F135" opacity="0.06" />
-      <rect x="340" y="10" width="30" height="30" rx="4" fill="#C8F135" opacity="0.06" />
-      <rect x="10" y="520" width="30" height="30" rx="4" fill="#C8F135" opacity="0.06" />
-      <rect x="340" y="520" width="30" height="30" rx="4" fill="#C8F135" opacity="0.06" />
+      <circle cx="190" cy="280" r="5" fill="white" />
+      <ellipse cx="190" cy="280" rx="70" ry="22" fill="white" opacity="0.05" />
+      <rect x="10" y="10" width="30" height="30" rx="4" fill="white" opacity="0.06" />
+      <rect x="340" y="10" width="30" height="30" rx="4" fill="white" opacity="0.06" />
+      <rect x="10" y="520" width="30" height="30" rx="4" fill="white" opacity="0.06" />
+      <rect x="340" y="520" width="30" height="30" rx="4" fill="white" opacity="0.06" />
     </svg>
   );
 }
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-navy overflow-hidden border-b border-line">
+    <section className="relative min-h-screen flex items-center bg-blue overflow-hidden border-b border-white/15">
+      {/* Background photo */}
+      <img
+        src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1600&q=80&auto=format&fit=crop"
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none"
+        aria-hidden="true"
+      />
+      {/* Grid overlay */}
       <div
-        className="absolute inset-0 opacity-[0.05]"
+        className="absolute inset-0 opacity-[0.04]"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(200,241,53,0.5) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(200,241,53,0.5) 1px, transparent 1px)
+            linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px)
           `,
           backgroundSize: "60px 60px",
         }}
       />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-lime/[0.04] blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white/[0.03] blur-3xl rounded-full pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16 w-full">
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-16 items-center">
@@ -145,11 +153,11 @@ export default function Hero() {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="flex items-center gap-4 mb-6"
             >
-              <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+              <span className="font-mono text-[0.68rem] text-white/60 uppercase tracking-[0.06em]">
                 <span className="text-lime mr-2">●</span>Club abierto · Grecia, Alajuela
               </span>
-              <span className="flex-1 h-px bg-line hidden sm:block" />
-              <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em] hidden sm:block">
+              <span className="flex-1 h-px bg-white/20 hidden sm:block" />
+              <span className="font-mono text-[0.68rem] text-white/60 uppercase tracking-[0.06em] hidden sm:block">
                 Temporada &apos;26
               </span>
             </motion.div>
@@ -170,7 +178,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-              className="mt-6 text-lg sm:text-xl text-white/55 max-w-lg leading-relaxed"
+              className="mt-6 text-lg sm:text-xl text-white/70 max-w-lg leading-relaxed"
             >
               Las únicas canchas de pádel en la zona.
               <br />
@@ -195,7 +203,7 @@ export default function Hero() {
                 href={WA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-line text-white/70 font-heading text-[15px] font-semibold tracking-tight px-7 py-4 rounded-full hover:border-lime hover:text-lime transition-colors text-center"
+                className="border border-white/30 text-white/80 font-heading text-[15px] font-semibold tracking-tight px-7 py-4 rounded-full hover:border-white hover:text-white transition-colors text-center"
               >
                 RESERVAR VÍA WHATSAPP
               </a>
@@ -223,10 +231,10 @@ export default function Hero() {
                       transition: { duration: 0.4 },
                     },
                   }}
-                  className="bg-navy-light border border-line px-3.5 py-2 rounded-full flex items-center gap-2"
+                  className="bg-white/10 border border-white/20 px-3.5 py-2 rounded-full flex items-center gap-2"
                 >
                   {stat.icon}
-                  <span className="font-heading text-white/75 text-[13px] font-semibold">
+                  <span className="font-heading text-white/90 text-[13px] font-semibold">
                     {stat.label}
                   </span>
                 </motion.div>
