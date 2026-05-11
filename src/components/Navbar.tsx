@@ -48,7 +48,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-navy/85 backdrop-blur-md border-b border-line shadow-lg"
+            ? "bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm"
             : "bg-transparent"
         }`}
       >
@@ -57,10 +57,10 @@ export default function Navbar() {
             <a href="#" className="flex items-center gap-2.5">
               <LogoIcon />
               <span className="font-heading text-[17px] font-semibold tracking-[-0.01em] leading-none">
-                <span className="text-white">EPIC</span>
+                <span className={scrolled ? "text-blue" : "text-white"}>EPIC</span>
                 <span className="text-lime ml-1">PADEL</span>
               </span>
-              <span className="hidden lg:block font-mono text-[0.65rem] text-muted uppercase tracking-[0.06em] ml-1.5">
+              <span className={`hidden lg:block font-mono text-[0.65rem] uppercase tracking-[0.06em] ml-1.5 ${scrolled ? "text-slate-400" : "text-white/50"}`}>
                 CR · EST 2024
               </span>
             </a>
@@ -70,7 +70,9 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-heading text-white/55 hover:text-lime transition-colors text-[13px] font-semibold"
+                  className={`font-heading transition-colors text-[13px] font-semibold ${
+                    scrolled ? "text-slate-600 hover:text-blue" : "text-white/80 hover:text-white"
+                  }`}
                 >
                   {link.label}
                 </a>
@@ -122,13 +124,13 @@ export default function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-40 bg-navy flex flex-col items-center justify-center gap-8">
+        <div className="fixed inset-0 z-40 bg-white flex flex-col items-center justify-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="font-heading text-4xl font-semibold text-white hover:text-lime transition-colors tracking-[-0.02em]"
+              className="font-heading text-4xl font-semibold text-[#1A1A2E] hover:text-blue transition-colors tracking-[-0.02em]"
             >
               {link.label}
             </a>
