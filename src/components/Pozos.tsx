@@ -45,7 +45,7 @@ export default function Pozos() {
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
-    <section id="pozos" className="py-24 bg-navy-card border-b border-line" ref={ref}>
+    <section id="pozos" className="py-24 bg-blue-light border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,19 +54,19 @@ export default function Pozos() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (03) Pozos de la Semana
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             POZOS DE{" "}
-            <span className="text-lime">LA SEMANA</span>
+            <span className="text-blue">LA SEMANA</span>
           </h2>
-          <p className="mt-3 text-white/45 text-[16px] max-w-xl">
+          <p className="mt-3 text-slate-500 text-[16px] max-w-xl">
             Jugá con personas de tu nivel. Inscribite por WhatsApp y asegurá tu lugar.
           </p>
         </motion.div>
@@ -78,18 +78,18 @@ export default function Pozos() {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
-              className="bg-navy border border-line rounded-lg overflow-hidden flex flex-col"
+              className="bg-white border border-slate-200 rounded-xl overflow-hidden flex flex-col shadow-sm"
             >
               <div className="p-6 flex-1">
-                <span className="font-heading font-semibold text-[0.62rem] text-lime uppercase tracking-[0.08em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
+                <span className="font-heading font-semibold text-[0.62rem] text-blue uppercase tracking-[0.08em] bg-blue/10 border border-blue/20 px-2.5 py-1 rounded-full">
                   {pozo.day}
                 </span>
-                <h3 className="font-heading text-[22px] font-semibold text-white tracking-[-0.02em] mt-4">
+                <h3 className="font-heading text-[22px] font-semibold text-[#1A1A2E] tracking-[-0.02em] mt-4">
                   Pozo de {pozo.level}
                 </h3>
                 <div className="flex items-center gap-2 mt-2">
                   <svg
-                    className="w-4 h-4 text-white/35"
+                    className="w-4 h-4 text-slate-400"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -98,7 +98,7 @@ export default function Pozos() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
                   </svg>
-                  <span className="font-mono text-[0.75rem] text-white/40">{pozo.time}</span>
+                  <span className="font-mono text-[0.75rem] text-slate-400">{pozo.time}</span>
                 </div>
               </div>
               <div className="px-6 pb-6">
@@ -120,18 +120,18 @@ export default function Pozos() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
-          className="border border-dashed border-line rounded-lg px-6 py-5"
+          className="border border-dashed border-slate-300 rounded-xl px-6 py-5"
         >
           <div className="flex flex-wrap items-center gap-4">
-            <span className="font-mono text-[0.62rem] text-white/30 uppercase tracking-[0.08em] shrink-0">
+            <span className="font-mono text-[0.62rem] text-slate-400 uppercase tracking-[0.08em] shrink-0">
               Próximamente
             </span>
-            <span className="h-px flex-1 bg-line/40 hidden sm:block" />
+            <span className="h-px flex-1 bg-slate-200 hidden sm:block" />
             <div className="flex flex-wrap gap-3">
               {proximamente.map((label) => (
                 <span
                   key={label}
-                  className="font-mono text-[0.7rem] text-white/30 uppercase tracking-[0.06em] bg-white/5 border border-white/10 px-4 py-2 rounded-full"
+                  className="font-mono text-[0.7rem] text-slate-400 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-4 py-2 rounded-full"
                 >
                   {label}
                 </span>
