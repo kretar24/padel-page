@@ -15,7 +15,7 @@ const plans = [
     price: "$30",
     unit: "/hora y media",
     badge: "PRECIO ESPECIAL",
-    badgeClass: "bg-line/60 text-white/50",
+    badgeClass: "bg-slate-100 text-slate-500",
     featured: false,
     description:
       "La hora perfecta para una sesión tranquila entre semana.",
@@ -39,7 +39,7 @@ export default function Pricing() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="precios" className="py-24 bg-navy-light border-b border-line" ref={ref}>
+    <section id="precios" className="py-24 bg-blue-light border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -48,17 +48,17 @@ export default function Pricing() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (03) Tarifas
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             PRECIOS SIMPLES,{" "}
-            <span className="text-lime">SIN SORPRESAS</span>
+            <span className="text-blue">SIN SORPRESAS</span>
           </h2>
         </motion.div>
 
@@ -71,8 +71,8 @@ export default function Pricing() {
               transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
               className={`relative rounded p-8 flex flex-col gap-4 ${
                 plan.featured
-                  ? "bg-navy border border-lime shadow-[0_0_40px_rgba(200,241,53,0.08)]"
-                  : "bg-navy border border-line"
+                  ? "bg-blue border border-blue-dark shadow-[0_0_40px_rgba(27,79,216,0.25)]"
+                  : "bg-white border border-slate-200"
               }`}
             >
               <span
@@ -81,24 +81,24 @@ export default function Pricing() {
                 {plan.badge}
               </span>
 
-              <h3 className="font-heading text-[24px] font-semibold text-white tracking-[-0.01em]">
+              <h3 className={`font-heading text-[24px] font-semibold tracking-[-0.01em] ${plan.featured ? "text-white" : "text-[#1A1A2E]"}`}>
                 {plan.title}
               </h3>
 
-              <p className="text-white/40 text-[13px] font-mono uppercase tracking-[0.04em]">{plan.hours}</p>
+              <p className={`text-[13px] font-mono uppercase tracking-[0.04em] ${plan.featured ? "text-white/40" : "text-slate-400"}`}>{plan.hours}</p>
 
               <div className="flex items-end gap-1.5 my-1">
                 <span
                   className={`font-heading text-[64px] leading-none font-extrabold tracking-[-0.03em] ${
-                    plan.featured ? "text-lime" : "text-white"
+                    plan.featured ? "text-lime" : "text-blue"
                   }`}
                 >
                   {plan.price}
                 </span>
-                <span className="text-white/40 mb-2 text-[14px]">{plan.unit}</span>
+                <span className={`mb-2 text-[14px] ${plan.featured ? "text-white/40" : "text-slate-400"}`}>{plan.unit}</span>
               </div>
 
-              <p className="text-white/45 text-[14px] leading-relaxed">
+              <p className={`text-[14px] leading-relaxed ${plan.featured ? "text-white/45" : "text-slate-500"}`}>
                 {plan.description}
               </p>
 
@@ -109,7 +109,7 @@ export default function Pricing() {
                 className={`mt-auto block text-center font-heading text-[14px] font-semibold tracking-tight py-3.5 rounded transition-colors ${
                   plan.featured
                     ? "bg-lime text-accent-ink hover:bg-lime-dark"
-                    : "border border-line text-white/70 hover:border-lime hover:text-lime"
+                    : "border border-slate-300 text-slate-500 hover:border-blue hover:text-blue"
                 }`}
               >
                 RESERVAR EN PLAYTOMIC
@@ -122,7 +122,7 @@ export default function Pricing() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center text-white/35 mt-10 max-w-md mx-auto text-[13px]"
+          className="text-center text-slate-400 mt-10 max-w-md mx-auto text-[13px]"
         >
           El precio es por cancha completa. Divídelo entre tus 4 jugadores.
         </motion.p>
@@ -145,7 +145,7 @@ export default function Pricing() {
             href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-line text-white/60 font-heading text-[15px] font-semibold tracking-tight px-8 py-4 rounded-full hover:border-lime hover:text-lime transition-colors"
+            className="inline-flex items-center gap-2 border border-slate-200 text-slate-500 font-heading text-[15px] font-semibold tracking-tight px-8 py-4 rounded-full hover:border-blue hover:text-blue transition-colors"
           >
             O VÍA WHATSAPP
           </a>
