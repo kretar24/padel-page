@@ -28,7 +28,7 @@ export default function HowToBook() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section className="py-24 bg-navy-light border-b border-line" ref={ref}>
+    <section className="py-24 bg-blue-light border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,22 +37,22 @@ export default function HowToBook() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (04) Proceso
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             ¿CÓMO{" "}
-            <span className="text-lime">RESERVAR</span>?
+            <span className="text-blue">RESERVAR</span>?
           </h2>
         </motion.div>
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="hidden md:block absolute top-10 left-[calc(16.666%+1.5rem)] right-[calc(16.666%+1.5rem)] h-px bg-line" />
+          <div className="hidden md:block absolute top-10 left-[calc(16.666%+1.5rem)] right-[calc(16.666%+1.5rem)] h-px bg-slate-300" />
 
           <div className="grid md:grid-cols-3 gap-12">
             {steps.map((step, i) => (
@@ -70,10 +70,10 @@ export default function HowToBook() {
                     {step.number}
                   </span>
                 </div>
-                <h3 className="font-heading text-[19px] font-semibold text-white tracking-[-0.01em] mb-3">
+                <h3 className="font-heading text-[19px] font-semibold text-[#1A1A2E] tracking-[-0.01em] mb-3">
                   {step.title}
                 </h3>
-                <p className="text-white/45 leading-relaxed text-[15px]">{step.body}</p>
+                <p className="text-slate-500 leading-relaxed text-[15px]">{step.body}</p>
               </motion.div>
             ))}
           </div>
