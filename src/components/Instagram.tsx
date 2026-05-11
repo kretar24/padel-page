@@ -6,15 +6,15 @@ import { useRef } from "react";
 function PostPlaceholder({ index }: { index: number }) {
   const isVideo = index === 1 || index === 4;
   return (
-    <div className="aspect-square bg-navy border border-lime/20 rounded overflow-hidden relative flex items-center justify-center group hover:border-lime/50 transition-colors duration-200">
-      <div className="absolute inset-0 bg-gradient-to-br from-lime/[0.04] to-transparent" />
+    <div className="aspect-square bg-white border border-blue/20 rounded-lg overflow-hidden relative flex items-center justify-center group hover:border-blue/50 transition-colors duration-200">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue/[0.04] to-transparent" />
       {isVideo ? (
         <svg
           width="32"
           height="32"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#C8F135"
+          stroke="#1B4FD8"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -29,7 +29,7 @@ function PostPlaceholder({ index }: { index: number }) {
           height="32"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#C8F135"
+          stroke="#1B4FD8"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -50,7 +50,7 @@ export default function Instagram() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section className="py-24 bg-navy-light border-b border-line" ref={ref}>
+    <section className="py-24 bg-blue-light border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,26 +59,26 @@ export default function Instagram() {
           className="text-center mb-12"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="flex-1 h-px bg-line" />
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="flex-1 h-px bg-slate-200" />
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               Instagram
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
 
           <h2
-            className="font-heading font-medium text-white tracking-[-0.03em] mb-3"
+            className="font-heading font-medium text-[#1A1A2E] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(32px, 4.5vw, 56px)", lineHeight: 1.05 }}
           >
             SEGUINOS EN{" "}
-            <span className="text-lime">INSTAGRAM</span>
+            <span className="text-blue">INSTAGRAM</span>
           </h2>
 
-          <p className="text-lime font-heading text-[22px] sm:text-[28px] font-semibold tracking-[-0.02em] mb-4">
+          <p className="text-blue font-heading text-[22px] sm:text-[28px] font-semibold tracking-[-0.02em] mb-4">
             @epicpadelcr
           </p>
 
-          <p className="text-white/45 text-[16px] max-w-md mx-auto">
+          <p className="text-slate-500 text-[16px] max-w-md mx-auto">
             Torneos, partidos y la comunidad de pádel que está creciendo en Grecia.
           </p>
         </motion.div>
@@ -123,7 +123,7 @@ export default function Instagram() {
             </svg>
             VER NUESTRO INSTAGRAM
           </a>
-          <p className="font-mono text-[0.62rem] text-muted uppercase tracking-[0.06em]">
+          <p className="font-mono text-[0.62rem] text-slate-400 uppercase tracking-[0.06em]">
             Seguinos para ver los últimos partidos y torneos
           </p>
         </motion.div>
