@@ -92,7 +92,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden text-white p-2"
+              className={`lg:hidden p-2 ${scrolled ? "text-slate-600" : "text-white"}`}
               aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
               aria-expanded={menuOpen}
             >
