@@ -12,7 +12,7 @@ const pills = [
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -32,7 +32,7 @@ const pills = [
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -51,7 +51,7 @@ const pills = [
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -68,7 +68,7 @@ export default function Store() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section className="py-24 bg-navy-light border-b border-line" ref={ref}>
+    <section className="py-24 bg-white border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -77,19 +77,19 @@ export default function Store() {
           className="mb-14"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (03) Tienda
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             TIENDA DE PÁDEL{" "}
-            <span className="text-lime">EN EL CLUB</span>
+            <span className="text-blue">EN EL CLUB</span>
           </h2>
-          <p className="mt-3 text-white/45 text-[16px] max-w-xl">
+          <p className="mt-3 text-slate-500 text-[16px] max-w-xl">
             Todo lo que necesitás para jugar, disponible en nuestras canchas.
           </p>
         </motion.div>
@@ -98,21 +98,21 @@ export default function Store() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          className="bg-navy border border-line rounded p-8 md:p-12 flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center"
+          className="bg-blue-light border border-slate-200 rounded-xl p-8 md:p-12 flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center"
         >
           <div className="flex-1">
-            <p className="text-white/60 leading-relaxed text-[16px] max-w-xl mb-8">
-              <span className="text-white font-medium">Punto Pádel CR</span> tiene su tienda física dentro de Epic Padel. Palas, pelotas, grips, ropa y accesorios de las mejores marcas.
+            <p className="text-slate-500 leading-relaxed text-[16px] max-w-xl mb-8">
+              <span className="text-[#1A1A2E] font-medium">Punto Pádel CR</span> tiene su tienda física dentro de Epic Padel. Palas, pelotas, grips, ropa y accesorios de las mejores marcas.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
               {pills.map((pill) => (
                 <span
                   key={pill.label}
-                  className="flex items-center gap-2 bg-lime/5 border border-lime/15 px-4 py-2 rounded-full"
+                  className="flex items-center gap-2 bg-blue/5 border border-blue/15 px-4 py-2 rounded-full"
                 >
                   {pill.icon}
-                  <span className="font-heading font-semibold text-[0.72rem] text-white/70 uppercase tracking-[0.05em]">
+                  <span className="font-heading font-semibold text-[0.72rem] text-slate-600 uppercase tracking-[0.05em]">
                     {pill.label}
                   </span>
                 </span>
@@ -128,7 +128,7 @@ export default function Store() {
               >
                 VER TIENDA ONLINE <span aria-hidden>→</span>
               </a>
-              <span className="border border-line text-white/45 font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
+              <span className="border border-slate-200 text-slate-400 font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
                 O visitanos en cancha
               </span>
             </div>
@@ -143,13 +143,13 @@ export default function Store() {
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
             >
-              <rect x="1" y="1" width="178" height="178" rx="8" stroke="#C8F135" strokeWidth="1" strokeDasharray="8 4" opacity="0.2" />
-              <rect x="16" y="16" width="148" height="148" rx="4" fill="#13192C" stroke="#C8F135" strokeWidth="1" opacity="0.4" />
-              <path d="M90 50 C 100 65, 100 95, 90 110 M 90 50 C 80 65, 80 95, 90 110" stroke="#C8F135" strokeWidth="1.5" opacity="0.6" />
-              <line x1="60" y1="80" x2="120" y2="80" stroke="#C8F135" strokeWidth="1.5" opacity="0.5" />
-              <circle cx="90" cy="80" r="4" fill="#C8F135" opacity="0.8" />
-              <circle cx="90" cy="80" r="20" stroke="#C8F135" strokeWidth="1" opacity="0.15" />
-              <text x="90" y="138" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#C8F135" opacity="0.5" letterSpacing="2">PUNTO PÁDEL CR</text>
+              <rect x="1" y="1" width="178" height="178" rx="8" stroke="#1B4FD8" strokeWidth="1" strokeDasharray="8 4" opacity="0.3" />
+              <rect x="16" y="16" width="148" height="148" rx="4" fill="#EEF3FF" stroke="#1B4FD8" strokeWidth="1" opacity="0.5" />
+              <path d="M90 50 C 100 65, 100 95, 90 110 M 90 50 C 80 65, 80 95, 90 110" stroke="#1B4FD8" strokeWidth="1.5" opacity="0.6" />
+              <line x1="60" y1="80" x2="120" y2="80" stroke="#1B4FD8" strokeWidth="1.5" opacity="0.5" />
+              <circle cx="90" cy="80" r="4" fill="#1B4FD8" opacity="0.8" />
+              <circle cx="90" cy="80" r="20" stroke="#1B4FD8" strokeWidth="1" opacity="0.15" />
+              <text x="90" y="138" textAnchor="middle" fontFamily="monospace" fontSize="9" fill="#1B4FD8" opacity="0.5" letterSpacing="2">PUNTO PÁDEL CR</text>
             </svg>
           </div>
         </motion.div>
