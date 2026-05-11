@@ -11,7 +11,7 @@ export default function Location() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section id="ubicacion" className="py-24 bg-navy border-b border-line" ref={ref}>
+    <section id="ubicacion" className="py-24 bg-white border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,20 +20,20 @@ export default function Location() {
           className="mb-14"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (05) Ubicación
             </span>
-            <span className="flex-1 h-px bg-line" />
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em] hidden sm:block">
+            <span className="flex-1 h-px bg-slate-200" />
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em] hidden sm:block">
               09°56′N · 84°09′W
             </span>
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             DÓNDE{" "}
-            <span className="text-lime">ENCONTRARNOS</span>
+            <span className="text-blue">ENCONTRARNOS</span>
           </h2>
         </motion.div>
 
@@ -42,7 +42,7 @@ export default function Location() {
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="rounded overflow-hidden border border-line shadow-xl aspect-video lg:aspect-auto lg:h-[420px]"
+            className="rounded-xl overflow-hidden border border-slate-200 shadow-md aspect-video lg:aspect-auto lg:h-[420px]"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.8!2d-84.3107336!3d10.0819365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa059716be020dd%3A0x882cab263bc5cdd!2sEpic%20Padel!5e0!3m2!1ses!2scr!4v1713000000000!5m2!1ses!2scr"
@@ -60,21 +60,21 @@ export default function Location() {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-            className="bg-navy-card rounded border border-line p-8 flex flex-col gap-6"
+            className="bg-blue-light rounded-xl border border-slate-200 p-8 flex flex-col gap-6"
             id="contacto"
           >
-            <h3 className="font-heading text-[22px] font-semibold text-white tracking-[-0.01em]">
+            <h3 className="font-heading text-[22px] font-semibold text-[#1A1A2E] tracking-[-0.01em]">
               EPIC PADEL
             </h3>
 
-            <div className="flex flex-col gap-5 text-white/60">
+            <div className="flex flex-col gap-5 text-slate-500">
               <div className="flex gap-4 items-start">
                 <svg
                   width="18"
                   height="18"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C8F135"
+                  stroke="#1B4FD8"
                   strokeWidth="1.5"
                   className="shrink-0 mt-0.5"
                 >
@@ -82,8 +82,8 @@ export default function Location() {
                   <circle cx="12" cy="10" r="3" />
                 </svg>
                 <div>
-                  <p className="text-white font-medium text-[14px]">500m de los Tribunales de Grecia</p>
-                  <p className="text-[13px] text-white/45 mt-0.5">20301, Grecia, Alajuela, Costa Rica</p>
+                  <p className="text-[#1A1A2E] font-medium text-[14px]">500m de los Tribunales de Grecia</p>
+                  <p className="text-[13px] text-slate-400 mt-0.5">20301, Grecia, Alajuela, Costa Rica</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ export default function Location() {
                   height="18"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C8F135"
+                  stroke="#1B4FD8"
                   strokeWidth="1.5"
                   className="shrink-0"
                 >
@@ -101,7 +101,7 @@ export default function Location() {
                 </svg>
                 <a
                   href="tel:+50683121442"
-                  className="text-white font-medium text-[14px] hover:text-lime transition-colors"
+                  className="text-[#1A1A2E] font-medium text-[14px] hover:text-blue transition-colors"
                 >
                   +506 8312-1442
                 </a>
@@ -113,7 +113,7 @@ export default function Location() {
                   height="18"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C8F135"
+                  stroke="#1B4FD8"
                   strokeWidth="1.5"
                   className="shrink-0 mt-0.5"
                 >
@@ -121,8 +121,8 @@ export default function Location() {
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
                 <div>
-                  <p className="text-white font-medium text-[14px]">Horario</p>
-                  <p className="text-[13px] text-white/45 mt-0.5">3:00 PM – 10:00 PM · Todos los días</p>
+                  <p className="text-[#1A1A2E] font-medium text-[14px]">Horario</p>
+                  <p className="text-[13px] text-slate-400 mt-0.5">3:00 PM – 10:00 PM · Todos los días</p>
                 </div>
               </div>
 
@@ -132,7 +132,7 @@ export default function Location() {
                   height="18"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="#C8F135"
+                  stroke="#1B4FD8"
                   strokeWidth="1.5"
                   className="shrink-0"
                 >
@@ -140,13 +140,13 @@ export default function Location() {
                   <line x1="3" y1="12" x2="21" y2="12" />
                   <line x1="12" y1="3" x2="12" y2="21" />
                 </svg>
-                <p className="text-white font-medium text-[14px]">
+                <p className="text-[#1A1A2E] font-medium text-[14px]">
                   3 canchas profesionales
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 mt-2 pt-4 border-t border-line">
+            <div className="flex flex-col sm:flex-row gap-3 mt-2 pt-4 border-t border-slate-200">
               <a
                 href={WA_URL}
                 target="_blank"
@@ -157,7 +157,7 @@ export default function Location() {
               </a>
               <a
                 href="tel:+50683121442"
-                className="flex-1 border border-line text-white/60 font-heading text-[14px] font-semibold tracking-tight py-3 rounded hover:border-lime hover:text-lime transition-colors text-center"
+                className="flex-1 border border-slate-200 text-slate-500 font-heading text-[14px] font-semibold tracking-tight py-3 rounded-lg hover:border-blue hover:text-blue transition-colors text-center"
               >
                 LLAMAR
               </a>
