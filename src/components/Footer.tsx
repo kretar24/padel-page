@@ -22,7 +22,7 @@ function LogoIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-navy border-t border-line py-14">
+    <footer className="bg-[#0F2F8A] border-t border-white/10 py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
           <div className="flex flex-col gap-3">
@@ -33,14 +33,14 @@ export default function Footer() {
                 <span className="text-lime ml-1">PADEL</span>
               </span>
             </a>
-            <p className="text-white/35 text-[13px] mt-1">El pádel llegó a Grecia.</p>
-            <p className="font-mono text-[0.62rem] text-muted uppercase tracking-[0.06em] mt-1">
+            <p className="text-white/50 text-[13px] mt-1">El pádel llegó a Grecia.</p>
+            <p className="font-mono text-[0.62rem] text-white/40 uppercase tracking-[0.06em] mt-1">
               CR · EST 2024
             </p>
           </div>
 
           <div>
-            <h4 className="font-mono text-[0.62rem] text-muted uppercase tracking-[0.06em] mb-5">
+            <h4 className="font-mono text-[0.62rem] text-white/40 uppercase tracking-[0.06em] mb-5">
               ENLACES
             </h4>
             <ul className="flex flex-col gap-2.5">
@@ -48,7 +48,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-white/45 hover:text-lime transition-colors text-[14px]"
+                    className="text-white/50 hover:text-lime transition-colors text-[14px]"
                   >
                     {link.label}
                   </a>
@@ -58,10 +58,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-mono text-[0.62rem] text-muted uppercase tracking-[0.06em] mb-5">
+            <h4 className="font-mono text-[0.62rem] text-white/40 uppercase tracking-[0.06em] mb-5">
               CONTACTO
             </h4>
-            <ul className="flex flex-col gap-2.5 text-[14px] text-white/45">
+            <ul className="flex flex-col gap-2.5 text-[14px] text-white/50">
               <li>
                 <a
                   href="tel:+50683121442"
@@ -77,11 +77,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-line pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-mono text-[0.6rem] text-muted uppercase tracking-[0.06em]">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="font-mono text-[0.6rem] text-white/35 uppercase tracking-[0.06em]">
             © 2025 Epic Padel · Grecia, Alajuela, Costa Rica
           </p>
-          <p className="font-mono text-[0.6rem] text-muted uppercase tracking-[0.06em]">
+          <p className="font-mono text-[0.6rem] text-white/35 uppercase tracking-[0.06em]">
             09°56′N · 84°09′W
           </p>
         </div>
