@@ -19,13 +19,13 @@ export default function ComunidadWhatsApp() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section id="comunidad" className="py-20 bg-navy border-b border-line" ref={ref}>
+    <section id="comunidad" className="py-20 bg-white border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="border border-line rounded-xl overflow-hidden"
+          className="border border-slate-200 rounded-2xl overflow-hidden shadow-sm"
         >
           <div className="flex flex-col md:flex-row items-center gap-8 p-8 md:p-12">
             <div className="flex-shrink-0 w-16 h-16 rounded-full bg-[#25D366]/15 border border-[#25D366]/25 flex items-center justify-center">
@@ -34,13 +34,13 @@ export default function ComunidadWhatsApp() {
 
             <div className="flex-1 text-center md:text-left">
               <h2
-                className="font-heading font-extrabold text-white tracking-[-0.02em]"
+                className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.02em]"
                 style={{ fontSize: "clamp(22px, 3vw, 32px)", lineHeight: 1.1 }}
               >
                 COMUNIDAD{" "}
-                <span className="text-lime">EPIC PÁDEL</span>
+                <span className="text-blue">EPIC PÁDEL</span>
               </h2>
-              <p className="mt-2 text-white/45 text-[15px] max-w-lg">
+              <p className="mt-2 text-slate-500 text-[15px] max-w-lg">
                 Enterate de pozos, torneos y novedades antes que nadie. Unite al grupo de WhatsApp de la comunidad.
               </p>
             </div>
