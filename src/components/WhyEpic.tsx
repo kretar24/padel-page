@@ -13,7 +13,7 @@ const features = [
         height="28"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -32,7 +32,7 @@ const features = [
         height="28"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -51,7 +51,7 @@ const features = [
         height="28"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -72,7 +72,7 @@ const features = [
         height="28"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -89,7 +89,7 @@ export default function WhyEpic() {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
-    <section className="py-24 bg-navy-light border-b border-line" ref={ref}>
+    <section className="py-24 bg-blue-light border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -97,17 +97,17 @@ export default function WhyEpic() {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (01) Por qué Epic Padel
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em] mb-16"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em] mb-16"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             ¿POR QUÉ{" "}
-            <span className="text-lime">EPIC PADEL</span>?
+            <span className="text-blue">EPIC PADEL</span>?
           </h2>
         </motion.div>
 
@@ -119,13 +119,13 @@ export default function WhyEpic() {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
               transition={{ duration: 0.6, delay: i * 0.12, ease: "easeOut" }}
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="bg-navy border border-line rounded p-7 cursor-default"
+              className="bg-white border border-slate-200 rounded-xl p-7 cursor-default shadow-sm"
             >
               <div className="mb-5">{feature.icon}</div>
-              <h3 className="font-heading text-[20px] font-semibold text-white tracking-[-0.01em] mb-3">
+              <h3 className="font-heading text-[20px] font-semibold text-[#1A1A2E] tracking-[-0.01em] mb-3">
                 {feature.title}
               </h3>
-              <p className="text-white/50 leading-relaxed text-[15px]">{feature.body}</p>
+              <p className="text-slate-500 leading-relaxed text-[15px]">{feature.body}</p>
             </motion.div>
           ))}
         </div>
