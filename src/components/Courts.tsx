@@ -20,7 +20,7 @@ function CourtTopViewSVG() {
         width="192"
         height="292"
         rx="3"
-        stroke="#C8F135"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
         strokeDasharray="9 5"
         fill="none"
@@ -32,19 +32,19 @@ function CourtTopViewSVG() {
         width="172"
         height="272"
         rx="2"
-        fill="#13192C"
-        stroke="#C8F135"
+        fill="#EEF3FF"
+        stroke="#1B4FD8"
         strokeWidth="1.5"
       />
-      <line x1="14" y1="150" x2="186" y2="150" stroke="#C8F135" strokeWidth="2" />
-      <circle cx="14" cy="150" r="3.5" fill="#C8F135" />
-      <circle cx="186" cy="150" r="3.5" fill="#C8F135" />
+      <line x1="14" y1="150" x2="186" y2="150" stroke="#1B4FD8" strokeWidth="2" />
+      <circle cx="14" cy="150" r="3.5" fill="#1B4FD8" />
+      <circle cx="186" cy="150" r="3.5" fill="#1B4FD8" />
       <line x1="14" y1="90" x2="186" y2="90" stroke="white" strokeWidth="1" opacity="0.2" />
       <line x1="100" y1="90" x2="100" y2="150" stroke="white" strokeWidth="1" opacity="0.2" />
       <line x1="14" y1="210" x2="186" y2="210" stroke="white" strokeWidth="1" opacity="0.2" />
       <line x1="100" y1="150" x2="100" y2="210" stroke="white" strokeWidth="1" opacity="0.2" />
-      <circle cx="100" cy="150" r="3" fill="#C8F135" />
-      <ellipse cx="100" cy="150" rx="40" ry="14" fill="#C8F135" opacity="0.04" />
+      <circle cx="100" cy="150" r="3" fill="#1B4FD8" />
+      <ellipse cx="100" cy="150" rx="40" ry="14" fill="#1B4FD8" opacity="0.06" />
     </svg>
   );
 }
@@ -60,7 +60,7 @@ export default function Courts() {
   const isInView = useInView(ref, { once: true, amount: 0.15 });
 
   return (
-    <section id="canchas" className="py-24 bg-navy border-b border-line" ref={ref}>
+    <section id="canchas" className="py-24 bg-white border-b border-slate-200" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,19 +69,19 @@ export default function Courts() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-muted uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
               (02) Instalaciones
             </span>
-            <span className="flex-1 h-px bg-line" />
+            <span className="flex-1 h-px bg-slate-200" />
           </div>
           <h2
-            className="font-heading font-extrabold text-white tracking-[-0.03em]"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em]"
             style={{ fontSize: "clamp(36px, 5vw, 64px)", lineHeight: 1.02 }}
           >
             3 CANCHAS{" "}
-            <span className="text-lime">PROFESIONALES</span>
+            <span className="text-blue">PROFESIONALES</span>
           </h2>
-          <p className="mt-3 text-white/45 text-[16px] max-w-xl">
+          <p className="mt-3 text-slate-500 text-[16px] max-w-xl">
             Pistas de última generación, perfectas para jugar con amigos o
             competir en serio.
           </p>
@@ -94,18 +94,18 @@ export default function Courts() {
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
-              className="bg-navy-card border border-line rounded overflow-hidden"
+              className="bg-blue-light border border-slate-200 rounded-xl overflow-hidden"
             >
               <div className="p-8 pb-4">
                 <CourtTopViewSVG />
               </div>
-              <div className="border-t border-line px-6 py-5">
+              <div className="border-t border-slate-200 px-6 py-5">
                 <div className="flex items-center justify-between">
-                  <h3 className="font-heading text-[19px] font-semibold text-white tracking-[-0.01em]">
+                  <h3 className="font-heading text-[19px] font-semibold text-[#1A1A2E] tracking-[-0.01em]">
                     {court.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    <span className="font-heading font-semibold text-[0.62rem] text-white/50 uppercase tracking-[0.06em] bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span className="font-heading font-semibold text-[0.62rem] text-slate-500 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full">
                       Indoor
                     </span>
                     <span className="font-heading font-semibold text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
