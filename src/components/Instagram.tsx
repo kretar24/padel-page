@@ -2,46 +2,46 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
+import { INSTAGRAM_IMAGES } from "@/lib/images";
 
-function PostPlaceholder({ index }: { index: number }) {
-  const isVideo = index === 1 || index === 4;
+const INSTAGRAM_URL = "https://www.instagram.com/epicpadelcr/";
+
+function PostTile({ src, index }: { src: string; index: number }) {
   return (
-    <div className="aspect-square bg-white border border-blue/20 rounded-lg overflow-hidden relative flex items-center justify-center group hover:border-blue/50 transition-colors duration-200">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue/[0.04] to-transparent" />
-      {isVideo ? (
+    <a
+      href={INSTAGRAM_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="aspect-square rounded-lg overflow-hidden relative group block"
+      aria-label={`Ver publicación ${index + 1} en el Instagram de Epic Padel`}
+    >
+      <Image
+        src={src}
+        alt=""
+        fill
+        sizes="(max-width: 640px) 33vw, 220px"
+        className="object-cover transition-transform duration-300 group-hover:scale-105"
+      />
+      <span className="absolute inset-0 bg-blue/0 group-hover:bg-blue/30 transition-colors duration-200 flex items-center justify-center">
         <svg
-          width="32"
-          height="32"
+          width="28"
+          height="28"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#1B4FD8"
-          strokeWidth="1.5"
+          stroke="white"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="opacity-30 group-hover:opacity-50 transition-opacity"
+          className="opacity-0 group-hover:opacity-100 transition-opacity"
           aria-hidden="true"
         >
-          <polygon points="5 3 19 12 5 21 5 3" />
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="0.5" fill="white" />
         </svg>
-      ) : (
-        <svg
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#1B4FD8"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="opacity-30 group-hover:opacity-50 transition-opacity"
-          aria-hidden="true"
-        >
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-          <circle cx="8.5" cy="8.5" r="1.5" />
-          <polyline points="21 15 16 10 5 21" />
-        </svg>
-      )}
-    </div>
+      </span>
+    </a>
   );
 }
 
@@ -60,14 +60,14 @@ export default function Instagram() {
         >
           <div className="flex items-center gap-4 mb-6">
             <span className="flex-1 h-px bg-slate-200" />
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
               Instagram
             </span>
             <span className="flex-1 h-px bg-slate-200" />
           </div>
 
           <h2
-            className="font-heading font-medium text-[#1A1A2E] tracking-[-0.03em] mb-3"
+            className="font-heading font-extrabold text-[#1A1A2E] tracking-[-0.03em] mb-3"
             style={{ fontSize: "clamp(32px, 4.5vw, 56px)", lineHeight: 1.05 }}
           >
             SEGUINOS EN{" "}
@@ -89,8 +89,8 @@ export default function Instagram() {
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
           className="grid grid-cols-3 gap-2 sm:gap-3 max-w-2xl mx-auto mb-10"
         >
-          {Array.from({ length: 6 }).map((_, i) => (
-            <PostPlaceholder key={i} index={i} />
+          {INSTAGRAM_IMAGES.map((src, i) => (
+            <PostTile key={i} src={src} index={i} />
           ))}
         </motion.div>
 
@@ -123,7 +123,7 @@ export default function Instagram() {
             </svg>
             VER NUESTRO INSTAGRAM
           </a>
-          <p className="font-mono text-[0.62rem] text-slate-400 uppercase tracking-[0.06em]">
+          <p className="font-mono text-[0.62rem] text-slate-500 uppercase tracking-[0.06em]">
             Seguinos para ver los últimos partidos y torneos
           </p>
         </motion.div>

@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { HERO_IMAGE } from "@/lib/images";
 
 const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 const WA_URL =
@@ -124,13 +126,18 @@ function HeroCourtSVG() {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-blue overflow-hidden border-b border-white/15">
-      {/* Background photo */}
-      <img
-        src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1600&q=80&auto=format&fit=crop"
+      {/* Background photo — replace with a real shot of the indoor courts */}
+      <Image
+        src={HERO_IMAGE}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover pointer-events-none select-none"
         aria-hidden="true"
       />
+      {/* Blue tint so the brand colour dominates while text stays legible */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue/90 via-blue/80 to-blue-dark/90" />
       {/* Grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -153,11 +160,11 @@ export default function Hero() {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="flex items-center gap-4 mb-6"
             >
-              <span className="font-mono text-[0.68rem] text-white/60 uppercase tracking-[0.06em]">
+              <span className="font-mono text-[0.68rem] text-white/75 uppercase tracking-[0.06em]">
                 <span className="text-lime mr-2">●</span>Club abierto · Grecia, Alajuela
               </span>
               <span className="flex-1 h-px bg-white/20 hidden sm:block" />
-              <span className="font-mono text-[0.68rem] text-white/60 uppercase tracking-[0.06em] hidden sm:block">
+              <span className="font-mono text-[0.68rem] text-white/75 uppercase tracking-[0.06em] hidden sm:block">
                 Temporada &apos;26
               </span>
             </motion.div>
@@ -167,7 +174,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeOut" }}
               className="font-heading font-extrabold text-white leading-[0.92] tracking-[-0.04em]"
-              style={{ fontSize: "clamp(72px, 11vw, 152px)" }}
+              style={{ fontSize: "clamp(48px, 11vw, 152px)" }}
             >
               PÁDEL EN
               <br />

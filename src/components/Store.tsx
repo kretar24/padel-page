@@ -77,8 +77,8 @@ export default function Store() {
           className="mb-14"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
-              (03) Tienda
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
+              (04) Tienda
             </span>
             <span className="flex-1 h-px bg-slate-200" />
           </div>
@@ -128,7 +128,7 @@ export default function Store() {
               >
                 VER TIENDA ONLINE <span aria-hidden>→</span>
               </a>
-              <span className="border border-slate-200 text-slate-400 font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
+              <span className="border border-slate-200 text-slate-500 font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-full text-center flex items-center justify-center">
                 O visitanos en cancha
               </span>
             </div>

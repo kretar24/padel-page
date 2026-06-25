@@ -54,7 +54,7 @@ export default function Pozos() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
               (03) Pozos de la Semana
             </span>
             <span className="flex-1 h-px bg-slate-200" />
@@ -89,7 +89,7 @@ export default function Pozos() {
                 </h3>
                 <div className="flex items-center gap-2 mt-2">
                   <svg
-                    className="w-4 h-4 text-slate-400"
+                    className="w-4 h-4 text-slate-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -98,7 +98,7 @@ export default function Pozos() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
                   </svg>
-                  <span className="font-mono text-[0.75rem] text-slate-400">{pozo.time}</span>
+                  <span className="font-mono text-[0.75rem] text-slate-500">{pozo.time}</span>
                 </div>
               </div>
               <div className="px-6 pb-6">
@@ -106,7 +106,7 @@ export default function Pozos() {
                   href={waLink(pozo.msg)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full bg-lime text-accent-ink font-heading text-[14px] font-semibold tracking-tight py-3 rounded hover:bg-lime-dark transition-colors"
+                  className="flex items-center justify-center gap-2 w-full bg-lime text-accent-ink font-heading text-[14px] font-semibold tracking-tight py-3 rounded-lg hover:bg-lime-dark transition-colors"
                 >
                   <WhatsAppIcon />
                   INSCRIBIRME
@@ -123,7 +123,7 @@ export default function Pozos() {
           className="border border-dashed border-slate-300 rounded-xl px-6 py-5"
         >
           <div className="flex flex-wrap items-center gap-4">
-            <span className="font-mono text-[0.62rem] text-slate-400 uppercase tracking-[0.08em] shrink-0">
+            <span className="font-mono text-[0.62rem] text-slate-500 uppercase tracking-[0.08em] shrink-0">
               Próximamente
             </span>
             <span className="h-px flex-1 bg-slate-200 hidden sm:block" />
@@ -131,7 +131,7 @@ export default function Pozos() {
               {proximamente.map((label) => (
                 <span
                   key={label}
-                  className="font-mono text-[0.7rem] text-slate-400 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-4 py-2 rounded-full"
+                  className="font-mono text-[0.7rem] text-slate-500 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-4 py-2 rounded-full"
                 >
                   {label}
                 </span>

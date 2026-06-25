@@ -2,57 +2,15 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
+import { COURT_IMAGES } from "@/lib/images";
 
 const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 
-function CourtTopViewSVG() {
-  return (
-    <svg
-      viewBox="0 0 200 300"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full"
-      aria-hidden="true"
-    >
-      <rect
-        x="4"
-        y="4"
-        width="192"
-        height="292"
-        rx="3"
-        stroke="#1B4FD8"
-        strokeWidth="1.5"
-        strokeDasharray="9 5"
-        fill="none"
-        opacity="0.4"
-      />
-      <rect
-        x="14"
-        y="14"
-        width="172"
-        height="272"
-        rx="2"
-        fill="#EEF3FF"
-        stroke="#1B4FD8"
-        strokeWidth="1.5"
-      />
-      <line x1="14" y1="150" x2="186" y2="150" stroke="#1B4FD8" strokeWidth="2" />
-      <circle cx="14" cy="150" r="3.5" fill="#1B4FD8" />
-      <circle cx="186" cy="150" r="3.5" fill="#1B4FD8" />
-      <line x1="14" y1="90" x2="186" y2="90" stroke="white" strokeWidth="1" opacity="0.2" />
-      <line x1="100" y1="90" x2="100" y2="150" stroke="white" strokeWidth="1" opacity="0.2" />
-      <line x1="14" y1="210" x2="186" y2="210" stroke="white" strokeWidth="1" opacity="0.2" />
-      <line x1="100" y1="150" x2="100" y2="210" stroke="white" strokeWidth="1" opacity="0.2" />
-      <circle cx="100" cy="150" r="3" fill="#1B4FD8" />
-      <ellipse cx="100" cy="150" rx="40" ry="14" fill="#1B4FD8" opacity="0.06" />
-    </svg>
-  );
-}
-
 const courts = [
-  { number: 1, name: "Cancha 1" },
-  { number: 2, name: "Cancha 2" },
-  { number: 3, name: "Cancha 3" },
+  { number: 1, name: "Cancha 1", image: COURT_IMAGES[0] },
+  { number: 2, name: "Cancha 2", image: COURT_IMAGES[1] },
+  { number: 3, name: "Cancha 3", image: COURT_IMAGES[2] },
 ];
 
 export default function Courts() {
@@ -69,7 +27,7 @@ export default function Courts() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
               (02) Instalaciones
             </span>
             <span className="flex-1 h-px bg-slate-200" />
@@ -96,8 +54,14 @@ export default function Courts() {
               transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
               className="bg-blue-light border border-slate-200 rounded-xl overflow-hidden"
             >
-              <div className="p-8 pb-4">
-                <CourtTopViewSVG />
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={court.image}
+                  alt={`Cancha de pádel indoor — ${court.name}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
               </div>
               <div className="border-t border-slate-200 px-6 py-5">
                 <div className="flex items-center justify-between">
@@ -105,10 +69,10 @@ export default function Courts() {
                     {court.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    <span className="font-heading font-semibold text-[0.62rem] text-slate-500 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full">
+                    <span className="font-heading font-semibold text-[0.62rem] text-slate-600 uppercase tracking-[0.06em] bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full">
                       Indoor
                     </span>
-                    <span className="font-heading font-semibold text-[0.62rem] text-lime uppercase tracking-[0.06em] bg-lime/10 border border-lime/20 px-2.5 py-1 rounded-full">
+                    <span className="font-heading font-semibold text-[0.62rem] text-accent-ink uppercase tracking-[0.06em] bg-lime border border-lime-dark px-2.5 py-1 rounded-full">
                       Disponible
                     </span>
                   </div>
@@ -128,7 +92,7 @@ export default function Courts() {
             href={PLAYTOMIC_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-lime text-accent-ink font-heading text-[15px] font-semibold tracking-tight px-10 py-4 rounded hover:bg-lime-dark transition-colors"
+            className="inline-flex items-center gap-3 bg-lime text-accent-ink font-heading text-[15px] font-semibold tracking-tight px-10 py-4 rounded-full hover:bg-lime-dark transition-colors"
           >
             RESERVAR CANCHA EN PLAYTOMIC
           </a>

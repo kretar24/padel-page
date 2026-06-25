@@ -50,7 +50,7 @@ export default function ComunidadWhatsApp() {
                 href={COMMUNITY_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-[#25D366] text-white font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded hover:bg-[#1ebe5d] transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-2.5 bg-[#25D366] text-white font-heading text-[14px] font-semibold tracking-tight px-7 py-3.5 rounded-lg hover:bg-[#1ebe5d] transition-colors whitespace-nowrap"
               >
                 <WhatsAppIcon className="w-4 h-4" />
                 UNIRME A LA COMUNIDAD

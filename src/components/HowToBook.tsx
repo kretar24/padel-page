@@ -37,8 +37,8 @@ export default function HowToBook() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
-              (04) Proceso
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
+              (07) Proceso
             </span>
             <span className="flex-1 h-px bg-slate-200" />
           </div>

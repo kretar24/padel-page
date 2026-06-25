@@ -4,7 +4,20 @@
       "Bash(npm install *)",
       "Bash(npx tsc *)",
       "Bash(npm run *)",
-      "Bash(curl -sI \"https://maps.app.goo.gl/MBJN3NRtxjuWbsVp7\")"
+      "Bash(curl -sI \"https://maps.app.goo.gl/MBJN3NRtxjuWbsVp7\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "PowerShell(claude mcp add magic --scope user --env API_KEY=\"522e8b976e955fe9e7c01368b09187f64d976997fdf1dff68e5c5c30fb232ace\" -- npx -y @21st-dev/magic@latest)",
+      "PowerShell(claude mcp list)",
+      "Read(//c/Users/kevsa/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python scripts/search.py \"padel sports club booking landing page premium energetic indoor courts\" --design-system -p \"Epic Padel\" -f markdown)",
+      "Read(//c/Users/kevsa/.claude/plugins/cache/ui-ux-pro-max-skill/**)",
+      "Bash(find . -name \"search.py\")",
+      "Bash(find . -maxdepth 6 -type d -name scripts)",
+      "Bash(python scripts/search.py \"hero social-proof testimonial conversion sports booking\" --domain landing -n 3)",
+      "Bash(python scripts/search.py \"accessibility focus contrast animation image loading\" --domain ux -n 8)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(npx next *)"
     ]
   }
 }

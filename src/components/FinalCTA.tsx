@@ -2,6 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
+import { FINAL_CTA_IMAGE } from "@/lib/images";
 
 const PLAYTOMIC_URL = "https://playtomic.com/clubs/epic-padel";
 const WA_URL =
@@ -16,13 +18,17 @@ export default function FinalCTA() {
       className="relative py-32 bg-blue overflow-hidden"
       ref={ref}
     >
-      {/* Background photo */}
-      <img
-        src="https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?w=1600&q=80&auto=format&fit=crop"
+      {/* Background photo — replace with a real action shot on court */}
+      <Image
+        src={FINAL_CTA_IMAGE}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none select-none"
+        fill
+        sizes="100vw"
+        className="object-cover pointer-events-none select-none"
         aria-hidden="true"
       />
+      {/* Blue tint so text stays legible over the photo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue/90 via-blue/80 to-blue-dark/95" />
       {/* Grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -42,8 +48,8 @@ export default function FinalCTA() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="flex items-center gap-4 mb-8"
         >
-          <span className="font-mono text-[0.68rem] uppercase tracking-[0.06em] text-white/50">
-            (06) Reservar
+          <span className="font-mono text-[0.68rem] uppercase tracking-[0.06em] text-white/70">
+            (10) Reservar
           </span>
           <span className="flex-1 h-px bg-white/20" />
         </motion.div>
@@ -53,7 +59,7 @@ export default function FinalCTA() {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="font-heading font-extrabold tracking-[-0.04em] leading-[0.92] text-white"
-          style={{ fontSize: "clamp(56px, 9vw, 128px)" }}
+          style={{ fontSize: "clamp(40px, 9vw, 128px)" }}
         >
           ¿LISTO PARA TU{" "}
           <br className="hidden sm:block" />

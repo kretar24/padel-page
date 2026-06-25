@@ -20,11 +20,11 @@ export default function Location() {
           className="mb-14"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
-              (05) Ubicación
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
+              (08) Ubicación
             </span>
             <span className="flex-1 h-px bg-slate-200" />
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em] hidden sm:block">
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em] hidden sm:block">
               09°56′N · 84°09′W
             </span>
           </div>
@@ -83,7 +83,7 @@ export default function Location() {
                 </svg>
                 <div>
                   <p className="text-[#1A1A2E] font-medium text-[14px]">500m de los Tribunales de Grecia</p>
-                  <p className="text-[13px] text-slate-400 mt-0.5">20301, Grecia, Alajuela, Costa Rica</p>
+                  <p className="text-[13px] text-slate-500 mt-0.5">20301, Grecia, Alajuela, Costa Rica</p>
                 </div>
               </div>
 
@@ -122,7 +122,7 @@ export default function Location() {
                 </svg>
                 <div>
                   <p className="text-[#1A1A2E] font-medium text-[14px]">Horario</p>
-                  <p className="text-[13px] text-slate-400 mt-0.5">3:00 PM – 10:00 PM · Todos los días</p>
+                  <p className="text-[13px] text-slate-500 mt-0.5">3:00 PM – 10:00 PM · Todos los días</p>
                 </div>
               </div>
 
@@ -151,7 +151,7 @@ export default function Location() {
                 href={WA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 bg-lime text-accent-ink font-heading text-[14px] font-semibold tracking-tight py-3 rounded hover:bg-lime-dark transition-colors text-center"
+                className="flex-1 bg-lime text-accent-ink font-heading text-[14px] font-semibold tracking-tight py-3 rounded-lg hover:bg-lime-dark transition-colors text-center"
               >
                 WHATSAPP
               </a>

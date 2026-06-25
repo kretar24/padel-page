@@ -57,8 +57,8 @@ export default function Navbar() {
             <a href="#" className="flex items-center gap-2.5">
               <LogoIcon />
               <span className="font-heading text-[17px] font-semibold tracking-[-0.01em] leading-none">
-                <span className={scrolled ? "text-blue" : "text-white"}>EPIC</span>
-                <span className="text-lime ml-1">PADEL</span>
+                <span className={scrolled ? "text-[#1A1A2E]" : "text-white"}>EPIC</span>
+                <span className={`ml-1 ${scrolled ? "text-blue" : "text-lime"}`}>PADEL</span>
               </span>
               <span className={`hidden lg:block font-mono text-[0.65rem] uppercase tracking-[0.06em] ml-1.5 ${scrolled ? "text-slate-400" : "text-white/50"}`}>
                 CR · EST 2024

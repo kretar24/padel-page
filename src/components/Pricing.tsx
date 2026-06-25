@@ -48,8 +48,8 @@ export default function Pricing() {
           className="mb-16"
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
-              (03) Tarifas
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
+              (05) Tarifas
             </span>
             <span className="flex-1 h-px bg-slate-200" />
           </div>
@@ -85,7 +85,7 @@ export default function Pricing() {
                 {plan.title}
               </h3>
 
-              <p className={`text-[13px] font-mono uppercase tracking-[0.04em] ${plan.featured ? "text-white/40" : "text-slate-400"}`}>{plan.hours}</p>
+              <p className={`text-[13px] font-mono uppercase tracking-[0.04em] ${plan.featured ? "text-white/70" : "text-slate-500"}`}>{plan.hours}</p>
 
               <div className="flex items-end gap-1.5 my-1">
                 <span
@@ -95,10 +95,10 @@ export default function Pricing() {
                 >
                   {plan.price}
                 </span>
-                <span className={`mb-2 text-[14px] ${plan.featured ? "text-white/40" : "text-slate-400"}`}>{plan.unit}</span>
+                <span className={`mb-2 text-[14px] ${plan.featured ? "text-white/70" : "text-slate-500"}`}>{plan.unit}</span>
               </div>
 
-              <p className={`text-[14px] leading-relaxed ${plan.featured ? "text-white/45" : "text-slate-500"}`}>
+              <p className={`text-[14px] leading-relaxed ${plan.featured ? "text-white/70" : "text-slate-500"}`}>
                 {plan.description}
               </p>
 
@@ -106,7 +106,7 @@ export default function Pricing() {
                 href={PLAYTOMIC_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-auto block text-center font-heading text-[14px] font-semibold tracking-tight py-3.5 rounded transition-colors ${
+                className={`mt-auto block text-center font-heading text-[14px] font-semibold tracking-tight py-3.5 rounded-lg transition-colors ${
                   plan.featured
                     ? "bg-lime text-accent-ink hover:bg-lime-dark"
                     : "border border-slate-300 text-slate-500 hover:border-blue hover:text-blue"
@@ -122,7 +122,7 @@ export default function Pricing() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-center text-slate-400 mt-10 max-w-md mx-auto text-[13px]"
+          className="text-center text-slate-500 mt-10 max-w-md mx-auto text-[13px]"
         >
           El precio es por cancha completa. Divídelo entre tus 4 jugadores.
         </motion.p>

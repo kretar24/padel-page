@@ -16,9 +16,35 @@
 
 html {
   scroll-behavior: smooth;
+  /* Offset anchor jumps so headings clear the fixed navbar */
+  scroll-padding-top: 5.5rem;
 }
 
 body {
   background-color: #ffffff;
   color: #1A1A2E;
+}
+
+/*
+ * Universal keyboard focus indicator.
+ * A blue outline reads on light surfaces; a lime halo reads on blue/dark
+ * surfaces — together they stay visible everywhere in the palette.
+ */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(200, 241, 53, 0.55);
+  border-radius: 6px;
+}
+
+/* Respect users who ask for less motion (CSS-driven transitions/animations). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

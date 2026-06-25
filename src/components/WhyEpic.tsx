@@ -97,7 +97,7 @@ export default function WhyEpic() {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="flex items-center gap-4 mb-6">
-            <span className="font-mono text-[0.68rem] text-slate-400 uppercase tracking-[0.06em]">
+            <span className="font-mono text-[0.68rem] text-slate-500 uppercase tracking-[0.06em]">
               (01) Por qué Epic Padel
             </span>
             <span className="flex-1 h-px bg-slate-200" />
@@ -118,8 +118,7 @@ export default function WhyEpic() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
               transition={{ duration: 0.6, delay: i * 0.12, ease: "easeOut" }}
-              whileHover={{ y: -4, transition: { duration: 0.2 } }}
-              className="bg-white border border-slate-200 rounded-xl p-7 cursor-default shadow-sm"
+              className="bg-white border border-slate-200 rounded-xl p-7 shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="mb-5">{feature.icon}</div>
               <h3 className="font-heading text-[20px] font-semibold text-[#1A1A2E] tracking-[-0.01em] mb-3">
